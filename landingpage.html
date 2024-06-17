@@ -15,6 +15,7 @@
         html, body {
             width: 100%;
             height: 100%;
+        
         }
         
         
@@ -43,6 +44,7 @@
             list-style: none;
             margin: 0px 10px;
             align-items: center;
+            
         
             
         
@@ -60,6 +62,7 @@
             position: relative;
             top: 15px;
             right: -13px;
+            margin-bottom: -10px;
         }
         
         .navright {
@@ -90,7 +93,6 @@
             display: flex;
             justify-content: center;
             height: 85vh;
-            width: 100vw;
         }
         
         .img {
@@ -99,7 +101,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 98vw;
+            width:98vw;
             background-color: rgba(17, 16, 16, 0.7); /* Background color */
             background-image: url('landing.jpg'); /* Background image */
             background-repeat: no-repeat;
@@ -128,8 +130,113 @@
             margin-top: 20px;
             border-radius: 10px;
         }
-        
-        
+        .section2{
+          
+          
+          margin-top: 30px;
+          height: 60vh;
+          width: auto;
+          background-color:rgb(243, 243, 236)
+        }
+       
+        .products{
+            border-radius: 12px;
+            width:300px;
+            height:350px;
+            box-shadow: 1px 1px 12px 2px;
+            margin: 10px;
+            background-color:whitesmoke;
+
+        }
+        .products:hover{
+            box-shadow:rgba(37, 40, 0, 0.968) -6px -2px 20px 0px;
+            transition: 0.5s;
+            transform: perspective(23);
+            width: 320px;
+            height: 370px;
+            
+        }
+        .products img{
+            margin-top: 12px;
+            margin-left: 12px;
+            width:90%;
+            height:60%;
+            border: solid 1px grey;
+            border-radius: 10px;
+            
+        }
+        .products h2{
+            width:90%;
+            text-align: center;
+            margin:5px  10px;
+            
+            
+        }
+        .products button{
+            margin-top: 0px;
+            padding:5px 10px;
+            margin-left: 12px;
+            font-size: 18px;
+            border-radius:4px;
+
+            margin: 10px;
+        }
+        .products h1{
+            height: 30px;
+            width: 25%;
+            text-align: center;
+            border: solid 2px black;
+            margin: 0px 10px;
+            border-radius: 13px;
+            
+        }
+        .price{
+            margin: top 10px;;
+            margin-left: 20px;
+            display:flex ;
+            justify-content: space-between;
+        }
+        .shop1{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            
+        }
+        .section2 h2    {
+            margin-top: 12px;
+            margin-left: 15px;
+        }
+        .section3{
+            margin-top: 1%;
+            height: 60vh;
+            width: auto;
+            background-color:rgb(243, 243, 236)
+        }
+        .more h1{
+            color: aliceblue;
+            text-decoration: none;
+            border: solid 1px black;
+            width: 5%;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 14px;
+            background-color: rgb(186, 139, 38);
+        }
+        .more{
+            text-decoration: none;
+            margin-top: 30px;
+            display: flex;
+            justify-content:end;
+            margin-right: 50px;
+        }
+        .more h1:hover{
+            width: 6%;
+            height: auto;
+        }
+        .section3 h2{
+            margin-left: 20px;
+        }
         
     </style>
 </head>
@@ -166,6 +273,110 @@
         
         </section>
         <section class="section2">
+            <h2>Fresh vegetables</h2>
+            
+            <div class="shop1">
+            <div class="products">
+                <img src="carrot.jpg" alt="">
+                <h2>Carrot (1kg)</h2>
+                <div class="price">
+                    <h3>&#x20B9 65</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            <div class="products">
+                <img src="tomato.webp" alt="">
+                <h2>tomato (1kg)</h2>
+                <div class="price">
+                    <h3>&#x20B9 45</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            <div class="products">
+                <img src="onion.webp" alt="">
+                <h2>Onion (1kg)</h2>
+                <div class="price">
+                    <h3>&#x20B9 77</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            <div class="products">
+                <img src="cabbage.webp" alt="">
+                <h2>Cabbage(1kg)</h2>
+                <div class="price">
+                    <h3>&#x20B9 35</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            
+            
+
+
+            </div></div>
+            <a class="more" href="#"><h1>more</h1></a>
+
+        </section>
+        <section class="section3">
+            <h2>Fresh fruits</h2>
+            
+            <div class="shop1">
+            <div class="products">
+                <img src="mango.jpg" alt="">
+                <h2>Mango (1kg)</h2>
+                <div class="price">
+                    <h3>&#x20B9 55</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            <div class="products">
+                <img src="apples.jpeg" alt="">
+                <h2>apples (1kg)</h2>
+                <div class="price">
+                    <h3>&#x20B9 85</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            <div class="products">
+                <img src="bananas.jpg" alt="">
+                <h2>bananas (12 pcs)</h2>
+                <div class="price">
+                    <h3>&#x20B9 43</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            <div class="products">
+                <img src="orange.jpg" alt="">
+                <h2>orange (10 pcs)</h2>
+                <div class="price">
+                    <h3>&#x20B9 95</h3>
+                    <button id="add">Add</button>
+                </div>
+
+
+            </div>
+            
+            
+
+
+            </div></div>
+            <a class="more" href="#"><h1>more</h1></a>
+
+        </section>
+        <section class="sec4">
 
         </section>
     </main>
