@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>cart page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: "Poppins", sans-serif;
+            
+        
+        }
+        
+        
+        
+        nav {
+            height: 6vh;
+            background-color: white;
+            display: flex;
+            border: solid 1px white;
+            box-shadow: 0px 0px 10px 3px;
+            z-index: 2;
+        }
+        
+        .navleft ul {
+            display: flex;
+            margin-left: 39%;
+            position: relative;
+            top: px;
+        }
+        
+        .navleft {
+            width: 50%;
+        }
+        
+        .navleft ul li {
+            list-style: none;
+            margin: 0px 10px;
+            align-items: center;
+            
+        
+            
+        
+        }
+        
+        .navleft ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            align-items: center;
+        }
+        
+        .navleft h1 {
+            font-family: "Poppins", sans-serif;
+            position: relative;
+            top: 15px;
+            right: -13px;
+            margin-bottom: -10px;
+        }
+        
+        .navright {
+            width: 50%;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+        }
+        
+        .navright ul {
+            display: flex;
+            align-items: end;
+            
+        }
+        
+        .navright ul li {
+            list-style: none;
+            margin: 10px 10px;
+        }
+        
+        .navright a img {
+            height: 33px;
+        }
+        .firstsec{
+            margin: 10px;
+            height: 80vh;
+            background-color:rgb(224, 251, 251) ;
+            display: flex;
+        }
+        
+        .firstsecright{
+            width: 60vw;
+        
+        }
+        .cart-prodct{
+            background-color: aliceblue;
+            border-radius: 14px ;
+            box-shadow: 1px 1px 34px 2px;
+
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            margin: 10px 20px;
+            height: 90%;
+            width: 90%;
+            border: solid 2px black;
+        }
+        .product{
+            display: flex ;
+            margin: 10px;
+            height: 26%;
+            background-color:rgb(242, 251, 241);
+            border-radius: 24px;
+            box-shadow: 1px 1px 2px 4px green;
+
+        }
+        .pleft img{
+            border: solid  orange 1px;
+            border-radius: 14px;
+            height: 145px;
+            width: 154px;
+            margin:0px  12px;
+            
+            
+        }
+        .pleft{
+            text-align: center; 
+        }
+        .pright{
+            display: flex;
+            
+            width: 70%;
+            align-items:start;
+            justify-content: center;
+        }
+        .pricing > h2{
+            
+            padding: 2px;
+        
+        }
+        .firstsecright > h2:first-child{
+            text-align: center;
+            font-size:40px;
+            font-family: cursive;
+             
+        }
+        .pricing > h2:first-child{
+            color: rgb(31, 159, 31);
+        }
+        .firstsecleft{
+            width: 40vw;
+        
+            display: flex;
+            align-items: center;
+    
+            flex-direction: column;
+            
+            
+        }
+        .bill{
+            margin-top: 80px;
+            width: 60%;
+            height: 50%;
+            border: solid 1px; 
+            display: flex;
+            flex-direction:column;
+            background-color: rgb(255, 255, 255);
+            border-radius: 9px;
+            box-shadow: 6px 8px 11px 0px;
+            
+
+        }
+        .bill >h2:first-child{
+            text-align: center;
+            color: rgb(47, 160, 47);
+            
+        }
+        .bill > h3,h4{
+            padding:10px;
+        
+            margin:4px;
+
+
+        }
+        .btn-buy{
+            border: solid 2px;
+            text-align: center;
+            background-color: rgb(55, 163, 55);
+            color: aliceblue;
+            border-radius: 30px;
+            width: 60%;
+            margin: 12px 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navleft"><h1>E-Mandi</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Catalog</a></li>
+            <li><a href="">Contact</a></li>
+        </ul></div>
+        <div class="navright">
+            <ul>
+                <li><a href=""><img src="seach.png" alt=""></a></li>
+                <li><a href=""><img src="shopping-cart.png" alt=""></a></li>
+                <li><a href=""><img src="user.png" alt=""></a></li>
+            </ul>
+        </div>
+        
+        
+    </nav>
+    <section class="firstsec">
+        <div class="firstsecright">
+            <h2>your cart products </h2>
+            <div class="cart-prodct">
+                <div class="product">
+                    <div class="pleft">
+                        <img src="apples.jpeg" alt="">
+                        <h1>Apples</h1>
+
+                    </div>
+                    <div class="pright">
+                        <div class="pricing">
+                        <h2>Fresh organic Apples  </h2>
+                        <h2>Price: &#x20B9 64/kg</h2>
+                        <h2>items <select name="items" id=""><option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option></select></h2>
+                        <h2>
+                            Sub total = &#x20B9 128
+                        </h2>
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="pleft">
+                        <img src="carrot.jpg" alt="">
+                        <h1>Carrot</h1>
+
+                    </div>
+                    <div class="pright">
+                        <div class="pricing">
+                        <h2>Fresh organic carrots  </h2>
+                        <h2>Price: &#x20B9 34/kg</h2>
+                        <h2>items <select name="items" id=""><option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option></select></h2>
+                        <h2>
+                            Sub total = &#x20B9 68
+                        </h2>
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="pleft">
+                        <img src="bananas.jpg" alt="">
+                        <h1>Bananas</h1>
+
+                    </div>
+                    <div class="pright">
+                        <div class="pricing">
+                        <h2>Fresh organic Bananas  </h2>
+                        <h2>Price: &#x20B9 44/kg</h2>
+                        <h2>items <select name="items" id=""><option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option></select></h2>
+                        <h2>
+                            Sub total = &#x20B9 88
+                        </h2>
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+            </div>
+            
+
+        </div>
+        <div class="firstsecleft">
+            <div class="bill">
+                <h2>Order Summary</h2>
+                <h3>Sub total(3 items):&#x20B9 284</H3>
+                 <h4>items  = 3</h4>
+                 <h4> total = &#x20B9 284</h4>
+                <h2 class="btn-buy">Proceed to  buy</h2>
+                    
+
+            </div>
+            
+
+        </div>
+
+    </section>
+    
+
+</body>
+</html>
